@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadastro de alunos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Cadastro de alunos</h1>
+
+    <form id="form">
+      <input type="hidden" id="id">
+
+      <label>Nome
+        <input type="text" id="nome" required>
+      </label>
+
+      <label>E-mail
+        <input type="email" id="email" required>
+      </label>
+
+      <div class="linha">
+        <label>Telefone
+          <input type="text" id="telefone">
+        </label>
+        <label>Cidade
+          <input type="text" id="cidade">
+        </label>
+      </div>
+
+      <label>Turma
+        <select id="turma"></select>
+      </label>
+
+      <fieldset>
+        <legend>Cursos</legend>
+        <div id="cursos"></div>
+      </fieldset>
+
+      <p id="mensagem" role="status"></p>
+
+      <div class="acoes">
+        <button type="submit" id="salvar">Cadastrar aluno</button>
+        <button type="button" id="cancelar" class="secundario" hidden>Cancelar edição</button>
+      </div>
+    </form>
+
+    <h2>Alunos cadastrados</h2>
+    <div class="tabela">
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th><th>E-mail</th><th>Telefone</th><th>Cidade</th>
+            <th>Turma</th><th>Cursos</th><th></th>
+          </tr>
+        </thead>
+        <tbody id="lista"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

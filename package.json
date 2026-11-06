@@ -1,0 +1,13 @@
+{
+  "name": "projeto-crud",
+  "version": "1.1.0",
+  "description": "Projeto base: CRUD com Node.js, Express e MySQL (relações 1-1, N-1 e N-N)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mysql2": "^3.11.0"
+  }
+}
